@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/Tic-Tac-Toe/static/css/main.661925d6.css",
+    "main.js": "/Tic-Tac-Toe/static/js/main.5496cb78.js",
+    "static/media/gameMusic.mp3": "/Tic-Tac-Toe/static/media/gameMusic.129f7128a0d7ebfad7d2.mp3",
+    "static/media/win.wav": "/Tic-Tac-Toe/static/media/win.42321c98a7db1e830cd9.wav",
+    "static/media/background.gif": "/Tic-Tac-Toe/static/media/background.2c7e2a24eafe040743a6.gif",
+    "static/media/akuma.png": "/Tic-Tac-Toe/static/media/akuma.ba38a9c36977dce0ed20.png",
+    "static/media/ryu.png": "/Tic-Tac-Toe/static/media/ryu.7b333614e9d7bf3679e7.png",
+    "static/media/akumapunch.mp3": "/Tic-Tac-Toe/static/media/akumapunch.6e5d04d665c7930258cd.mp3",
+    "static/media/ryupunch.mp3": "/Tic-Tac-Toe/static/media/ryupunch.c4d2a2961256ddc1306c.mp3",
+    "static/media/mute.png": "/Tic-Tac-Toe/static/media/mute.920b31255b1dbec25f59.png",
+    "index.html": "/Tic-Tac-Toe/index.html",
+    "main.661925d6.css.map": "/Tic-Tac-Toe/static/css/main.661925d6.css.map",
+    "main.5496cb78.js.map": "/Tic-Tac-Toe/static/js/main.5496cb78.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.661925d6.css",
+    "static/js/main.5496cb78.js"
+  ]
+}
