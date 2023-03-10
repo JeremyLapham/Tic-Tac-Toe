@@ -8,12 +8,16 @@
   },
   "main": "/index.js",
   "devDependencies": {
+    "gh-pages": "^5.0.0",
     "react-scripts": "^5.0.1"
   },
   "name": "wjwuw8",
   "description": null,
+  "homepage": "https://jeremylapham.github.io/Tic-Tac-Toe/",
   "version": "0.0.0",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
