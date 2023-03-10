@@ -69,11 +69,11 @@ body {
   padding: 0;
   text-align: center;
   width: 200px;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 .square:hover {
-  box-shadow: 15px 25px 8px rgba(0, 0, 0, 0.5), 0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px #d6d6e7;
-  transform: translateY(-2px);
+  box-shadow: 25px 25px 15px rgba(0, 0, 0, 0.5), 12px 15px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px #d6d6e7;
+  transform: translateY(-4px);
 }
 
 .board-row:after {
@@ -87,7 +87,7 @@ body {
 }
 .game {
   display: flex;
-  justify-content: center;
+  justify-content: end;
 }
 .titleTxt {
   color: white;
@@ -95,7 +95,7 @@ body {
   justify-content: center;
 }
 .timeTravel {
-  padding:2rem 0 2rem 30px;
+  padding:1rem 0 2rem 40px;
 }
 
 .timeBG {
@@ -103,17 +103,19 @@ body {
   margin:2rem 0 0 0;
   background-color: rgba(255, 255, 255, 0.75);
   height:fit-content;
-  width:190px;
+  width:290px;
 }
 
 .desButton {
   background-color: #53131E;
   color:rgb(227, 223, 223);
   height:35px;
-  width:130px;
+  width:210px;
+  margin-top:1rem;
+  border-radius: 10px;
 }
 .desButton:hover {
-  box-shadow: 4px 4px 0 #000;
+  box-shadow: 6px 6px 2px #000000;
   transform: translate(-4px,-4px);
 }
 
@@ -125,8 +127,34 @@ body {
   overflow-y: hidden;
 }
 
-.celebrate {
-  background-image: url(./assets/celebrate.gif);
+.sound {
+  background-image: url(./components/musicComponent/assets/sound.png);
+  height:100px;
+  background-repeat: no-repeat;
+  background-color: rgba(255, 255, 255,0.75);
+  width:100px;
+  position: absolute;
   background-size: cover;
-  height:700px;
+  border-radius: 300px;
+  margin-top:15rem;
 }
+
+.sound:hover{
+  transform: translateY(-2px);
+}
+.mute {
+  background-image: url(./components/musicComponent/assets/mute.png);
+  height:100px;
+  background-repeat: no-repeat;
+  background-color: rgba(255, 255, 255,0.75);
+  width:100px;
+  position: absolute;
+  background-size: cover;
+  border-radius: 300px;
+  margin-top:15rem;
+}
+
+.mute:hover{
+  transform: translateY(-2px);
+}
+

@@ -1,9 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Row, Col } from 'react-bootstrap';
 import Board from '../boardComponent/boardComponent';
-import swal from 'sweetalert';
-
+import MusicPlayer from '../musicComponent/musicComponent'
 
 export default function Game() {
   const [history, setHistory] = useState([Array(9).fill(null)]);
@@ -36,13 +35,14 @@ export default function Game() {
   });
   return (
     <Container>
+      <MusicPlayer />
       <Row>
-        <Col lg={10}>
+        <Col lg={8}>
           <div className='game-board game'>
             <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay} />
           </div>
         </Col>
-        <Col lg={2} className='d-flex justify-content-center'>
+        <Col lg={4} className='d-flex justify-content-center'>
           <div className='timeTravel timeBG'>{moves}</div>
         </Col>
       </Row>

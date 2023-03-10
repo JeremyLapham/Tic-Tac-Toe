@@ -1,11 +1,23 @@
 import React, { useState } from "react";
 import Square from '../squaresComponent/squareComponent';
+import swal from 'sweetalert';
 import Ryu from './assets/ryu.png';
 import Akuma from './assets/akuma.png';
+import ryuHit from '../squaresComponent/assets/ryupunch.mp3';
+import akumaHit from '../squaresComponent/assets/akumapunch.mp3';
+import winner from './assets/win.wav';
+
 
 export default function Board({ xIsNext, squares, onPlay }) {
   const [ryuImage, setRyuImage] = useState(Ryu)
   const [akumaImage, setAkumaImage] = useState(Akuma);
+
+  function play() {
+    new Audio(ryuHit).play();
+  }
+  function playTwo() {
+    new Audio(akumaHit).play();
+  }
     function handleClick(i) {
       if (squares[i] || calculateWinner(squares)) {
         return;
@@ -13,8 +25,10 @@ export default function Board({ xIsNext, squares, onPlay }) {
       const nextSquares = squares.slice();
       if (xIsNext) {
         nextSquares[i] = ryuImage;
+        play();
       } else {
         nextSquares[i] = akumaImage;
+        playTwo();
       }
       onPlay(nextSquares);
     }
@@ -72,6 +86,10 @@ export default function Board({ xIsNext, squares, onPlay }) {
     for (let i = 0; i < lines.length; i++) {
       const [a, b, c] = lines[i];
       if (squares[a] && squares[a] === squares[b] && squares[a] === squares[c]) {
+        function win() {
+          new Audio(winner).play();
+        }
+        win()
         return squares[a];
       }
     }
