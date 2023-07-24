@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import Square from '../squaresComponent/squareComponent';
 import swal from 'sweetalert';
-import Ryu from './assets/ryu.png';
-import Akuma from './assets/akuma.png';
+import Ryu from '../../assets/ryu.png';
+import Akuma from '../../assets/akuma.png';
 import ryuHit from '../squaresComponent/assets/ryupunch.mp3';
 import akumaHit from '../squaresComponent/assets/akumapunch.mp3';
-import winner from './assets/win.wav';
+import winner from '../../assets/win.wav';
 
 
 export default function Board({ xIsNext, squares, onPlay }) {

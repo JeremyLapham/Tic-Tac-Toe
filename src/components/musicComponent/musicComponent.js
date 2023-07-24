@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Music from "./assets/gameMusic.mp3";
+import Music from "../../assets/gameMusic.mp3";
 
 export default function MusicPlayer() {
     const [isPlaying, setIsPlaying] = useState(false);

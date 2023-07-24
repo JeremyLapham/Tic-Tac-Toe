@@ -34,15 +34,17 @@ export default function Game() {
     );
   });
   return (
-    <Container>
+    <Container className='mt-5'>
+      <Row className='justify-content-center'>
+        <Col lg={2} className='d-flex justify-content-center'>
       <MusicPlayer />
-      <Row>
-        <Col lg={8}>
+        </Col>
+        <Col lg={8} className='d-flex justify-content-center'>
           <div className='game-board game'>
             <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay} />
           </div>
         </Col>
-        <Col lg={4} className='d-flex justify-content-center'>
+        <Col lg={2} className='d-flex justify-content-center'>
           <div className='timeTravel timeBG'>{moves}</div>
         </Col>
       </Row>
